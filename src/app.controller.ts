@@ -9,6 +9,7 @@ export class AppController {
 
   @UseGuards(LocalAuthGuard)
   @Post('login')
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   login(@Request() req): any {
     return {
       msg: 'Logged In!',
